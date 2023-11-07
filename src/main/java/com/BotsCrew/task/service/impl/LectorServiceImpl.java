@@ -1,12 +1,11 @@
 package com.BotsCrew.task.service.impl;
 
+import java.util.List;
 import com.BotsCrew.task.model.Lector;
 import com.BotsCrew.task.repository.LectorRepository;
 import com.BotsCrew.task.service.LectorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class LectorServiceImpl implements LectorService {
@@ -21,7 +20,6 @@ public class LectorServiceImpl implements LectorService {
     @Override
     public Lector getLectorByName(String firstName, String lastName) {
         return lectorRepository.findByFirstNameAndLastName(firstName, lastName);
-
     }
 
     @Override

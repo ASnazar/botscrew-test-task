@@ -20,7 +20,6 @@ public class Department {
     private String name;
     @ManyToOne
     private Lector head;
-
     @ManyToMany
     private Set<Lector> lectors;
 }
